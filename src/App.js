@@ -1,8 +1,10 @@
+import Body from "./components/Body";
+
 function App() {
   return (
-    <div className='bg-orange-300'>
-      hello
-    </div>
+    <>
+      <Body />
+    </>
   );
 }
 
