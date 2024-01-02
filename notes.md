@@ -7,6 +7,7 @@
 - Login /Sign Up
     - Sign In/ Sign up form
     - Use Formik for Validation (for huge forms)
+    - form validation along with useRef -> used to reference a value
 - Browse (after Authentication)
     - Header
     - Main Movie
@@ -18,5 +19,7 @@
 - NetflixGPT
     - Serach Bar
     - Movie Suggestion
+
+
     
      
