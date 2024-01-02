@@ -6,7 +6,7 @@
 # features
 - Login /Sign Up
     - Sign In/ Sign up form
-
+    - Use Formik for Validation (for huge forms)
 - Browse (after Authentication)
     - Header
     - Main Movie
