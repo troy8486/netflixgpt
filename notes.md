@@ -10,6 +10,7 @@
     - form validation along with useRef -> used to reference a value
 
     - authentication (firebase)
+    - create user account
 - Browse (after Authentication)
     - Header
     - Main Movie
