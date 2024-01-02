@@ -8,6 +8,8 @@
     - Sign In/ Sign up form
     - Use Formik for Validation (for huge forms)
     - form validation along with useRef -> used to reference a value
+
+    - authentication (firebase)
 - Browse (after Authentication)
     - Header
     - Main Movie
