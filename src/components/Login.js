@@ -13,32 +13,16 @@ const Login = () => {
 
   const email = useRef(null);
   const password = useRef(null);
-  const provider = new GoogleAuthProvider();
   const toggleSignIn = () => {
     setSignIn(!signIn);
   };
 
   const handleButtonClick = () => {
     const message = checkValidateData(email, password)
+    console.log(message)
     setErrorMessage(message);
-    if(message) return
-    signInWithPopup(auth, provider)
-    .then((result) => {
-      // This gives you a Google Access Token. You can use it to access the Google API.
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-      const user = result.user;
-      console.log(user, token)
-
-    }).catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      setErrorMessage(errorCode + "-" + errorMessage)
-
-    });
-
   }
+  
   return (
     <div>
       <Header />

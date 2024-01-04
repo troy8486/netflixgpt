@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Browse from "./Browse";
 import Login from "./Login";
+import { useEffect } from "react";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -14,6 +15,10 @@ const Body = () => {
     },
   ]);
 
+  useEffect(()=> {
+    // On AUTH Change
+    //todo
+  }, [])
   return (
     <>
       <RouterProvider router={appRouter} />
