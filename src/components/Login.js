@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidateData } from "../utils/validate";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "../utils/firebase";
+import { image_url } from "../constants";
 
 const Login = () => {
   const [signIn, setSignIn] = useState(true);
@@ -19,7 +18,6 @@ const Login = () => {
 
   const handleButtonClick = () => {
     const message = checkValidateData(email, password)
-    console.log(message)
     setErrorMessage(message);
   }
   
@@ -28,7 +26,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={image_url}
           alt="login"
         />
       </div>
